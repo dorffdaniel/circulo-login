@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+    position: relative;
+}
+
+ .efeito{
+    border-radius: 100%;
+    border-left: 2px solid #fff;
+    animation: borda 2s infinite;
+    height: 28em;
+    width: 28em;
+    position: absolute;
+} 
+
+ .efeito2{
+    border-radius: 100%;
+    border-right: 2px solid #fff;
+    animation: bord 2s infinite;
+    height: 26em;
+    width: 26em;
+    position: absolute;
+} 
+
+.caixa{
+    padding: 1em;
+    height: auto;
+    width: 15em;
+    background: #fff;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+@keyframes borda {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+
+@keyframes bord {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+} 
+
+.caixa h1{
+    font-size: calc(1vw +1em);
+    margin-bottom: 0.5em;
+    font-family: "Inter", serif;
+}
+
+.caixa label{
+    align-items: flex-start;
+    width: 80%;
+    font-family: "DM Sans", serif;
+}
+
+.caixa input{
+    margin-bottom: 1em;
+}
+
+.caixa .btnEntrar{
+    background: transparent;
+    border: 2px solid #000000;
+    border-radius: 0.4em;
+    padding: 0.4em;
+    color: #000;
+    margin-bottom: 1.7em;
+    font-family: "Lato", serif;
+    cursor: pointer;
+}
+
+.areaBtnCadastro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.areaBtnCadastro p{
+    font-family: "Lato", serif;
+}
+
+.areaBtnCadastro span{
+    color: #e40808;
+}
+
+.caixa .btnCadastro{
+    border: 2px solid #838485;
+    padding: 0.4em;
+    border-radius: 0.4em;
+    cursor: pointer;
+    font-family: "Lato", serif;
+}
+
+.efeitoAtivado{
+    border-left: 2px solid #4ff701;
+}
+.efeitoAtivado2{
+    border-right: 2px solid #4ff701;
+}
+
+.caixa-cadastro{
+    background: #fff;
+    padding: 0.6em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    z-index: 1;
+    display: none;
+}
+
+.caixa-cadastro h2{
+    font-family: "Inter", serif;
+}
+
+.areIdade{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 1em;
+}
+
+.areIdade input{
+    margin-right: 1.5em;
+}
+
+.caixa-cadastro label{
+    align-items: flex-start;
+    font-family: "DM Sans", serif;
+    width: 100%;
+    margin-bottom: 0.3em;
+}
+
+.caixa-cadastro .btnEntrar{
+    margin: 1em;
+    background: transparent;
+    padding: 0.4em;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+.areaBtnlogin{
+    display: flex;
+    margin: 0.5em 1em;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.areaBtnlogin p{
+    font-family: "Lato", serif;
+}
+
+.areaBtnlogin span{
+    color: #277005;
+    font-weight: 700;
+}
+
+.areaBtnlogin .btnLogin{
+    cursor: pointer;
+    padding: 0.3em;
+}
+
+.efeitoCaixaCadastro{
+    border-left: 2px dashed #e40808;
+}
+
+.efeitoCaixaCadastro2{
+    border-right: 2px dashed #e40808;
+}

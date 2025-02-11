@@ -3,6 +3,26 @@
 let conteudo = document.querySelector('.caixa');
 let efeito = document.querySelector('.efeito');
 let efeito2 = document.querySelector('.efeito2');
+let btnEntrar = document.querySelector('.btnEntrar');
+
+btnEntrar.addEventListener('click', clicou);
+    let resulCampoVazio = document.querySelectorAll('.resulCampoVazio')
+    let inputNome = document.querySelector('.inputNome');
+    let inputSenha = document.querySelector('.inputSenha');
+
+function clicou (){
+    if (inputNome.value === '' || inputSenha.value === '') {
+        resulCampoVazio.forEach((element) => {
+            element.classList.add('mensagemErro');
+        });
+    } else {
+        resulCampoVazio.forEach((element) => {
+            element.classList.remove('mensagemErro');
+        });
+    }
+}
+
+
 
 conteudo.addEventListener('mouseover', ()=>{
     efeito.classList.add('efeitoAtivado');

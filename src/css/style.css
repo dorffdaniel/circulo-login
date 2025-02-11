@@ -45,7 +45,6 @@
     background: #fff;
     border-radius: 1em;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
     z-index: 1;
@@ -83,18 +82,35 @@
 }
 
 .caixa input{
+    height: 2em;
     margin-bottom: 1em;
+}
+
+.resulCampoVazio{
+    color: #e40808;
+    opacity: 0;
+}
+
+.mensagemErro{
+    opacity: 1;
 }
 
 .caixa .btnEntrar{
     background: transparent;
-    border: 2px solid #000000;
+    background: #3cb304;
+    color: #fff;
     border-radius: 0.4em;
     padding: 0.4em;
-    color: #000;
-    margin-bottom: 1.7em;
+    margin: 1.7em;
     font-family: "Lato", serif;
     cursor: pointer;
+    transition: all ease 0.5s;
+    border: none;
+}
+
+.caixa .btnEntrar:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
 }
 
 .areaBtnCadastro{
@@ -113,11 +129,18 @@
 }
 
 .caixa .btnCadastro{
-    border: 2px solid #838485;
+    border: none;
     padding: 0.4em;
     border-radius: 0.4em;
     cursor: pointer;
     font-family: "Lato", serif;
+    background: #9dc28c;
+    color: #000000;
+}
+
+.caixa .btnCadastro:hover{
+    background: #1dbe45;
+    transition: all ease 0.5s;
 }
 
 .efeitoAtivado{
@@ -163,7 +186,9 @@
 
 .caixa-cadastro .btnEntrar{
     margin: 1em;
-    background: transparent;
+    background: #3cb304;
+    color: #fff;
+    border: none;
     padding: 0.4em;
     border-radius: 0.4em;
     cursor: pointer;
@@ -189,6 +214,10 @@
 .areaBtnlogin .btnLogin{
     cursor: pointer;
     padding: 0.3em;
+    background: #9dc28c;
+    color: #000000;
+    border: none;
+    border-radius: 0.5em;
 }
 
 .efeitoCaixaCadastro{

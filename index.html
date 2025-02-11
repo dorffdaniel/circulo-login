@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -13,10 +13,12 @@
             <div class="caixa">
                 <h1>Longin</h1>
                 <label for="nome">nome:</label>
-                <input type="text" placeholder="digite seu nome" id="nome">
+                <input type="text" placeholder="digite seu nome" id="nome" class="inputNome">
+                <p class="resulCampoVazio">* campo obrigatorio</p>
 
                 <label for="senha">senha:</label>
-                <input type="password" name="" id="senha">
+                <input type="password" name="" id="senha" placeholder="senha" class="inputSenha">
+                <p class="resulCampoVazio">* campo obrigatorio</p>
                 <button class="btnEntrar">Entrar</button>
                 <div class="areaBtnCadastro">
                     <p>nao tem <span>conta?</span></p>
@@ -44,6 +46,6 @@
             </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>

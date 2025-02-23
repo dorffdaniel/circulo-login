@@ -44,6 +44,34 @@ btnCadastro.addEventListener('click', ()=>{
     caixaCadastro.style.display='flex'; 
 })
 
+let btnEnviar = document.querySelector('.btnEnviar')
+btnEnviar.addEventListener('click', function(){
+    enviar();
+})
+
+function enviar(){
+    let verificacao = document.querySelectorAll('.verificar');
+    let campoVazio = false;
+
+    verificacao.forEach((event)=>{
+    if(event.value.trim() ===''){
+        campoVazio = true;
+        event.style.border = '2px solid red'
+    }else{
+        event.classList.remove('campo');
+        event.style.border = '';
+        event.value = '';
+    }
+
+});
+
+if(!campoVazio){
+    console.log('enviado');
+}else{
+    console.log('nao enviado');
+}
+}
+
 let btnLogin = document.querySelector('.btnLogin');
 
 btnLogin.addEventListener('click', ()=>{

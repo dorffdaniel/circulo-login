@@ -51,6 +51,7 @@ btnEnviar.addEventListener('click', function(){
 
 function enviar(){
     let verificacao = document.querySelectorAll('.verificar');
+    let contCadastro = document.querySelector('.conteudoCadastrado');
     let campoVazio = false;
 
     verificacao.forEach((event)=>{
@@ -66,9 +67,12 @@ function enviar(){
 });
 
 if(!campoVazio){
-    console.log('enviado');
+    contCadastro.classList.add('mostrar');
+    setInterval(() => {
+       contCadastro.classList.remove('mostrar') 
+    }, 3000);
 }else{
-    console.log('nao enviado');
+    console.log('invalido')
 }
 }
 

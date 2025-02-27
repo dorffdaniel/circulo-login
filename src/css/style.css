@@ -11,6 +11,7 @@
     outline: none;
 }
 
+
 .container{
     display: flex;
     align-items: center;
@@ -18,6 +19,32 @@
     height: 100vh;
     background: #000;
     position: relative;
+}
+
+.conteudoCadastrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: #1dbe45;
+    border-radius: .7em;
+    height: 2em;
+    top: 1em;
+    right: 1em;
+    padding: 0.5em;
+    display: none;
+}
+
+.conteudoCadastrado.mostrar{
+    display: flex;
+}
+
+.conteudoCadastrado p{
+    font-size: 1.5em;
+}
+
+.conteudoCadastrado i{
+    font-size: 2em;
 }
 
  .efeito{
